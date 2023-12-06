@@ -5,14 +5,14 @@
 #     
 #  - You skip running this file by un-commenting and run the following lines of code
 #
-    options(timeout = 1200) # to be able to download the file in case of big files or slow connection/server
-    furl <- 'https://sameersbucket.s3.fr-par.scw.cloud/final_ckpt.RData.zip'
-    fzname <- 'final_ckpt.RData.zip'
-    fname <- 'final_ckpt.RData'
-    if(!file.exists(fzname))
-       download.file(furl,fzname)
-    unzip(fzname, fname)
-    load(fname)
+#    options(timeout = 1200) # to be able to download the file in case of big files or slow connection/server
+#    furl <- 'https://sameersbucket.s3.fr-par.scw.cloud/final_ckpt.RData.zip'
+#    fzname <- 'final_ckpt.RData.zip'
+#    fname <- 'final_ckpt.RData'
+#    if(!file.exists(fzname))
+#       download.file(furl,fzname)
+#    unzip(fzname, fname)
+#    load(fname)
 #
 ############################################################################################
 if(!require(tidyverse)) install.packages("tidyverse", repos = "http://cran.us.r-project.org")
